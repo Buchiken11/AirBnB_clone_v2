@@ -6,15 +6,15 @@ from flask import Flask
 
 app = Flask(__name__)
 # Define the url for the root route "/Hello HBNB!"
-app.route('/Hello HBNB', strict_slashes=False)
-def hello_hbnb1():
+@app.route('/Hello HBNB', strict_slashes=False)
+def hello_hbnb():
 
     '''Disply Hello HBNB'''
 
     return "Hello HBNB!"
 
 # Define the url route
-app.route('/hbnb', strict_slashes=False)
+@app.route('/hbnb', strict_slashes=False)
 def hbnb():
 
     '''Display HBNB'''
